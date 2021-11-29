@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Cook Doces - Cardápio</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+	<link href='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.css' rel='stylesheet' />
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body style='background-color: #FDDDE6;'>
+	<!-- Navbar -->
+	<nav class="navbar navbar-expand-lg bg-danger navbar-dark" id="navibar">
+		<div class="container">
+			<a href="index.html" class="navbar-brand"><img src="img/mascotinho.png" width="50" height="50"></a>
+			<a href="index.html" class="navbar-brand">Cook Doces</a>
+
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu"> 		  		
+ 		  		<span class="navbar-toggler-icon"></span>
+ 		 	</button>
+
+			<div class="collapse navbar-collapse" id="navmenu">
+				<ul class="navbar-nav ms-auto">
+					<li class="nav-item">
+						<a href="index.html" class="nav-link">Inínio</a>
+					</li>				
+					<li class="nav-item">
+						<a href="cardapio.html" class="nav-link">Cardápio</a>
+					</li>				
+					<li class="nav-item">
+						<a href="local.html" class="nav-link">Sobre nós</a>
+					</li>
+					<li class="nav-item">
+						<a href="contato.html" class="nav-link">Fale conosco</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<!-- Acordeões-->
+	<div class="container p-5">
+		<h1 class="text-left text-dark"><img src="img/bolo_pixel.png">Bolos</h1>	
+		<div class="accordion" id="accordionBolo">
+	 	 	<div class="accordion-item">
+	   			<h2 class="accordion-header" id="headingBoloUm">
+	     			<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseBoloUm" aria-expanded="true" aria-controls="collapseBoloUm">
+	        			Bolo de Sensação
+	      			</button>
+	    		</h2>
+	    		<div id="collapseBoloUm" class="accordion-collapse collapse" aria-labelledby="headingBoloUm" data-bs-parent="#accordionBolo">
+	    			<div class="accordion-body">
+	       				Bolo de chocolate com recheio de leite ninho com pedaços de morango.
+	      			</div>
+	   			</div>
+	  		</div>
+	 		<div class="accordion-item">
+	    		<h2 class="accordion-header" id="headingTwo">
+	      			<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseBoloDois" aria-expanded="false" aria-controls="collapseBoloDois">
+	       				Bolo de limão
+	      			</button>
+	    		</h2>
+	    		<div id="collapseBoloDois" class="accordion-collapse collapse" aria-labelledby="headingBoloDois" data-bs-parent="#accordionBolo">
+	      			<div class="accordion-body">
+	        			Bolo de massa leve, cobertura de marshmellow com suco de limão e raspas de limão por cima.
+	      			</div>
+	    		</div>
+	  		</div>
+	  		<div class="accordion-item">
+	    		<h2 class="accordion-header" id="headingThree">
+	      			<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsecollapseBoloTres" aria-expanded="false" aria-controls="collapseBoloTres">
+	       				Bolo de cenoura
+	      			</button>
+	    		</h2>
+	    		<div id="collapsecollapseBoloTres" class="accordion-collapse collapse" aria-labelledby="headingcollapseBoloTres" data-bs-parent="#accordionBolo">
+	      			<div class="accordion-body">
+	        			Bolo com massa de cenoura e cobertura de chocolate ao leite. Perfeito para um café da tarde.
+	      			</div>
+	    		</div>
+	  		</div>
+	  		<div class="accordion-item">
+	    		<h2 class="accordion-header" id="headingFour">
+	      			<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseBoloQuatro" aria-expanded="false" aria-controls="collapseBoloQuatro">
+	       				Bolo de confeti
+	      			</button>
+	    		</h2>
+	    		<div id="collapseBoloQuatro" class="accordion-collapse collapse" aria-labelledby="headingBoloQuatro" data-bs-parent="#accordionBolo">
+	      			<div class="accordion-body">
+	        			Bolo de massa de chocolate, cobertura de chantilly com M&M, amado pelas crianças.
+	      			</div>
+	    		</div>
+	  		</div>
+	  		<div class="accordion-item">
+	    		<h2 class="accordion-header" id="headingFive">
+	      			<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseBoloCinco" aria-expanded="false" aria-controls="collapseBoloCinco">
+	       				Bolo de abacaxi
+	      			</button>
+	    		</h2>
+	    		<div id="collapseBoloCinco" class="accordion-collapse collapse" aria-labelledby="headingBoloCinco" data-bs-parent="#accordionBolo">
+	      			<div class="accordion-body">
+	        			Bolo amarelo com recheio de calda de abacaxi, cobertura de chantilly com pedaços de abacaxi.
+	      			</div>
+	    		</div>
+	  		</div>
+	  		<div class="accordion-item">
+	    		<h2 class="accordion-header" id="headingSix">
+	      			<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseBoloSeis" aria-expanded="false" aria-controls="collapseBoloSeis">
+	       				Bolo de churros
+	      			</button>
+	    		</h2>
+	    		<div id="collapseBoloSeis" class="accordion-collapse collapse" aria-labelledby="headingBoloSeis" data-bs-parent="#accordionBolo">
+	      			<div class="accordion-body">
+	        			Bolo de leite ninho, confeitado com açúcar e canela. Coberto com doce de leite.
+	      			</div>
+	    		</div>
+	  		</div>
+		</div>
+	</div>
+
+	<!-- doces de festa -->
+	<div class="container p-5">
+		<h1 class="text-left text-dark"><img src="img/cupcake_pixel.png" width="60" height="60">Doces de festa</h1>
+		<div class="accordion" id="accordionDoce">
+	 	 	<div class="accordion-item">
+	   			<h2 class="accordion-header" id="headingDoceUm">
+	     			<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseDoceUm" aria-expanded="true" aria-controls="collapseDoceUm">
+	        			Brigadeiro
+	      			</button>
+	    		</h2>
+	    		<div id="collapseDoceUm" class="accordion-collapse collapse" aria-labelledby="headingDoceUm" data-bs-parent="#accordionDoce">
+	    			<div class="accordion-body">
+	       				Brigadeiro de chocolate com chocolate granulado.
+	      			</div>
+	   			</div>
+	  		</div>
+	 		<div class="accordion-item">
+	    		<h2 class="accordion-header" id="headingDoceDois">
+	      			<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseDoceDois" aria-expanded="false" aria-controls="collapseDoceDois">
+	       				Beijinho
+	      			</button>
+	    		</h2>
+	    		<div id="collapseDoceDois" class="accordion-collapse collapse" aria-labelledby="headingDoceDois" data-bs-parent="#accordionDoce">
+	      			<div class="accordion-body">
+	        			Docinho de leite condensado com coco ralado.
+	      			</div>
+	    		</div>
+	  		</div>
+	  		<div class="accordion-item">
+	    		<h2 class="accordion-header" id="headingDoceTres">
+	      			<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseDoceTres" aria-expanded="false" aria-controls="collapseDoceTres">
+	       				Bicho de pé
+	      			</button>
+	    		</h2>
+	    		<div id="collapseDoceTres" class="accordion-collapse collapse" aria-labelledby="headingDoceTres" data-bs-parent="#accordionDoce">
+	      			<div class="accordion-body">
+	        			Docinho de leite condensado com sabor morango.
+	      			</div>
+	    		</div>
+	  		</div>
+	  		<div class="accordion-item">
+	    		<h2 class="accordion-header" id="headingDoceQuatro">
+	      			<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseDoceQuatro" aria-expanded="false" aria-controls="collapseDoceQuatro">
+	       				Olho de sogra
+	      			</button>
+	    		</h2>
+	    		<div id="collapseDoceQuatro" class="accordion-collapse collapse" aria-labelledby="headingDoceQuatro" data-bs-parent="#accordionDoce">
+	      			<div class="accordion-body">
+	        			Beijinho como ameixas
+	      			</div>
+	    		</div>
+	  		</div>
+	  		<div class="accordion-item">
+	    		<h2 class="accordion-header" id="headingDoceCinco">
+	      			<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseDoceCinco" aria-expanded="false" aria-controls="collapseDoceCinco">
+	       				Nhá benta
+	      			</button>
+	    		</h2>
+	    		<div id="collapseDoceCinco" class="accordion-collapse collapse" aria-labelledby="headingDoceCinco" data-bs-parent="#accordionDoce">
+	      			<div class="accordion-body">
+	        			Bolacha de nata com marshmellow coberta com chocolate.
+	      			</div>
+	    		</div>
+	  		</div>
+	  		<div class="accordion-item">
+	    		<h2 class="accordion-header" id="headingDoceSeis">
+	      			<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseDoceSeis" aria-expanded="false" aria-controls="collapseDoceSeis">
+	       				Marshmellow
+	      			</button>
+	    		</h2>
+	    		<div id="collapseDoceSeis" class="accordion-collapse collapse" aria-labelledby="headingDoceSeis" data-bs-parent="#accordionDoce">
+	      			<div class="accordion-body">
+	        			Docinho feito de gelatina com açúcar.
+	      			</div>
+	    		</div>
+	  		</div>
+		</div>
+	</div>
+
+	<!-- Tortas -->
+	<div class="container p-5">
+		<h1 class="text-left text-dark"><img src="img/torta_pixel.png" width="60" height="70">Tortas</h1>
+		<div class="accordion" id="accordionTorta">
+	 	 	<div class="accordion-item">
+	   			<h2 class="accordion-header" id="headingTortaUm">
+	     			<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTortaUm" aria-expanded="true" aria-controls="collapseTortaUm">
+	        			Torta de limão
+	      			</button>
+	    		</h2>
+	    		<div id="collapseTortaUm" class="accordion-collapse collapse" aria-labelledby="headingTortaUm" data-bs-parent="#accordionTorta">
+	    			<div class="accordion-body">
+	       				Torta de creme de limão com leite condensado e raspas de limão.
+	      			</div>
+	   			</div>
+	  		</div>
+	 		<div class="accordion-item">
+	    		<h2 class="accordion-header" id="headingTortaDois">
+	      			<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTortaDois" aria-expanded="false" aria-controls="collapseTortaDois">
+	       				Torta de cereja
+	      			</button>
+	    		</h2>
+	    		<div id="collapseTortaDois" class="accordion-collapse collapse" aria-labelledby="headingTortaDois" data-bs-parent="#accordionTorta">
+	      			<div class="accordion-body">
+	        			Torta de geleia de cereja com açúcar de confeiteiro.
+	      			</div>
+	    		</div>
+	  		</div>
+	  		<div class="accordion-item">
+	    		<h2 class="accordion-header" id="headingTortaTres">
+	      			<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTortaTres" aria-expanded="false" aria-controls="collapseTortaTres">
+	       				Torta de maçã
+	      			</button>
+	    		</h2>
+	    		<div id="collapseTortaTres" class="accordion-collapse collapse" aria-labelledby="headingTortaTres" data-bs-parent="#accordionTorta">
+	      			<div class="accordion-body">
+	        			Torta de creme de sonho com cobertura de gelatina de laranja com fatias de maçã.
+	      			</div>
+	    		</div>
+	  		</div>
+	  		<div class="accordion-item">
+	    		<h2 class="accordion-header" id="headingTortaQuatro">
+	      			<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTortaQuatro" aria-expanded="false" aria-controls="collapseTortaQuatro">
+	       				Torta de mirtilos
+	      			</button>
+	    		</h2>
+	    		<div id="collapseTortaQuatro" class="accordion-collapse collapse" aria-labelledby="headingTortaQuatro" data-bs-parent="#accordionTorta">
+	      			<div class="accordion-body">
+	        			Torta de geleia de mirtilos.
+	      			</div>
+	    		</div>
+	  		</div>
+	  		<div class="accordion-item">
+	    		<h2 class="accordion-header" id="headingTortaCinco">
+	      			<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTortaCinco" aria-expanded="false" aria-controls="collapseTortaCinco">
+	       				Torta de frutas vermelhas
+	      			</button>
+	    		</h2>
+	    		<div id="collapseTortaCinco" class="accordion-collapse collapse" aria-labelledby="headingTortaCinco" data-bs-parent="#accordionTorta">
+	      			<div class="accordion-body">
+	        			Torta de geleia de frutas vermelhas, como amora, framboesa e morangos.
+	      			</div>
+	    		</div>
+	  		</div>
+		</div>
+	</div>
+
+	<!-- Cupcake -->
+	<div class="container p-5">
+		<h1 class="text-left text-dark"><img src="img/mascotinho.png" width="60" height="60">Cupcakes</h1>
+		<div class="accordion" id="accordionCup">
+	 	 	<div class="accordion-item">
+	   			<h2 class="accordion-header" id="headingCupUm">
+	     			<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCupUm" aria-expanded="true" aria-controls="collapseCupUm">
+	        			Negresco
+	      			</button>
+	    		</h2>
+	    		<div id="collapseCupUm" class="accordion-collapse collapse" aria-labelledby="headingCupUm" data-bs-parent="#accordionCup">
+	    			<div class="accordion-body">
+	       				Cupcake de biscoito Negresco© com o próprio recheio.
+	      			</div>
+	   			</div>
+	  		</div>
+	 		<div class="accordion-item">
+	    		<h2 class="accordion-header" id="headingCupDois">
+	      			<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCupDois" aria-expanded="false" aria-controls="collapseCupDois">
+	       				Red Velvet
+	      			</button>
+	    		</h2>
+	    		<div id="collapseCupDois" class="accordion-collapse collapse" aria-labelledby="headingCupDois" data-bs-parent="#accordionCup">
+	      			<div class="accordion-body">
+	        			Cupcake de baunilha com corante vermelho.
+	      			</div>
+	    		</div>
+	  		</div>
+	  		<div class="accordion-item">
+	    		<h2 class="accordion-header" id="headingCupTres">
+	      			<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCupTres" aria-expanded="false" aria-controls="collapseCupTres">
+	       				Cupcake de frutas vermelhas
+	      			</button>
+	    		</h2>
+	    		<div id="collapseCupTres" class="accordion-collapse collapse" aria-labelledby="headingCupTres" data-bs-parent="#accordionCup">
+	      			<div class="accordion-body">
+	        			Massa de baunilha com recheio de geleia de frutas vermelhas.
+	      			</div>
+	    		</div>
+	  		</div>
+	  		<div class="accordion-item">
+	    		<h2 class="accordion-header" id="headingCupQuatro">
+	      			<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCupQuatro" aria-expanded="false" aria-controls="collapseCupQuatro">
+	       				Cupcake de chocolate
+	      			</button>
+	    		</h2>
+	    		<div id="collapseCupQuatro" class="accordion-collapse collapse" aria-labelledby="headingCupQuatro" data-bs-parent="#accordionCup">
+	      			<div class="accordion-body">
+	        			Massa de chocolate meio amargo com pedaços de chocolate ao leite.
+	      			</div>
+	    		</div>
+	  		</div>
+	  		<div class="accordion-item">
+	    		<h2 class="accordion-header" id="headingCupCinco">
+	      			<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCupCinco" aria-expanded="false" aria-controls="collapseCupCinco">
+	       				Cupcake de chocolate branco
+	      			</button>
+	    		</h2>
+	    		<div id="collapseCupCinco" class="accordion-collapse collapse" aria-labelledby="headingCupCinco" data-bs-parent="#accordionCup">
+	      			<div class="accordion-body">
+	        			Massa de chocolate branco com recheio de chantilly.
+	      			</div>
+	    		</div>
+	  		</div>
+		</div>
+	</div>
+
+	<!-- Footer -->
+	<footer class="p-5 bg-danger text-white position-relative">
+		<div class="container">
+			<div class="row g-4">
+				<div class="col-md">					
+					<h5 class="text-left">&emsp;&emsp;&emsp;&emsp;Parceiros</h5>
+					<div class="d-flex float-center">
+						<div>
+							<ul class=>
+								<li>InterNATINacional</li>
+								<li>Santos Futebol Clube</li>
+								<li>Parceiro 3</li>
+							</ul>
+						</div>
+						<div>
+							<ul>
+								<li>Parceiro 4</li>
+								<li>Parceiro 5</li>
+								<li>Parceiro 6</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col-md text-center">
+					<div id='map' class="container" style='width: 200px; height: 150px;'></div>
+					<p>Av. Prof. João Fiúsa, 1400 - Ribeirão Preto, SP</p>
+				</div>
+			</div>
+		</div>	
+	</footer>
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+	<script src='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.js'></script>
+	<script>
+		mapboxgl.accessToken = 'pk.eyJ1IjoibmVkb3JhbiIsImEiOiJja3Z1Mzl5ZDQwMzM2Mm9xbTVhb3gzcGtsIn0.m1U6A1LL0hqbcbm_vudhNg';
+		var map = new mapboxgl.Map({
+			container: 'map',
+			style: 'mapbox://styles/mapbox/streets-v11',
+			center: [-47.811991, -21.202777],
+			zoom: 14,
+		});
+	</script>
+</body>
+</html>

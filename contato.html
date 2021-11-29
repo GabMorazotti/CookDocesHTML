@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Cook Doces - Pedidos</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+	<link href='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.css' rel='stylesheet' />
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body style='background-color: #FDDDE6;'>
+
+	<!-- Navbar -->
+	<nav class="navbar navbar-expand-lg bg-danger navbar-dark" id="navibar">
+		<div class="container">
+			<a href="index.html" class="navbar-brand"><img src="img/mascotinho.png" width="50" height="50"></a>
+			<a href="index.html" class="navbar-brand">Cook Doces</a>
+
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu"> 		  		
+ 		  		<span class="navbar-toggler-icon"></span>
+ 		 	</button>
+
+			<div class="collapse navbar-collapse" id="navmenu">
+				<ul class="navbar-nav ms-auto">
+					<li class="nav-item">
+						<a href="index.html" class="nav-link">Início</a>
+					</li>				
+					<li class="nav-item">
+						<a href="cardapio.html" class="nav-link">Cardápio</a>
+					</li>				
+					<li class="nav-item">
+						<a href="local.html" class="nav-link">Sobre nós</a>
+					</li>
+					<li class="nav-item">
+						<a href="contato.html" class="nav-link">Fale conosco</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<!-- Forms -->
+	<section>
+		<div class="container p-5 text-dark">
+			<form  method="post" action="concluido.html">
+				<div class="container py-3">
+					<div class="mb-3">
+    					<label for="inputNome" class="form-label h4">Nome completo*</label>
+   						<input type="text" class="form-control" id="inputNome" required>
+  					</div>
+				
+					<div class="mb-3">
+    					<label for="inputEmail" class="form-label h4">E-mail*</label>
+   						<input type="email" class="form-control" id="inputEmail" required>
+  					</div>
+					<div class="d-md-flex">
+						<div class="mb-3">
+						    <label for="inputTelefone" class="form-label h4">Telefone de contato<br></label>
+						    <input type="tel" maxlength="13" class="form-control" id="inputTelefone">
+						</div>
+					</div>
+					<div class="mb-3">
+    					<label for="inputAssunto" class="form-label h4">Sobre o que deseja comentar?*</label>
+   						<input type="text" class="form-control" id="inputAssunto" required>
+  					</div>	
+
+  					<div class="mb-3">
+  						<label for="exampleFormControlTextarea1" class="form-label h4">Mensagem:*</label>
+  						<textarea class="form-control" id="exampleFormControlTextarea1" rows="3" required></textarea>
+					</div>
+					<div>
+						<button type="submit" class="btn btn-danger" static>Enviar mensagem</button>
+					</div>
+				</div>	
+			</form>
+		</div>
+	</section>
+
+
+				
+
+	<!-- Footer -->
+	<footer class="p-5 bg-danger text-white position-relative">
+		<div class="container">
+			<div class="row g-4">
+				<div class="col-md">					
+					<h5 class="text-left">&emsp;&emsp;&emsp;&emsp;Parceiros</h5>
+					<div class="d-flex float-center">
+						<div>
+							<ul class=>
+								<li>InterNATINacional</li>
+								<li>Santos Futebol Clube</li>
+								<li>Parceiro 3</li>
+							</ul>
+						</div>
+						<div>
+							<ul>
+								<li>Parceiro 4</li>
+								<li>Parceiro 5</li>
+								<li>Parceiro 6</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col-md text-center">
+					<div id='map' class="container" style='width: 200px; height: 150px;'></div>
+					<p>Av. Prof. João Fiúsa, 1400 - Ribeirão Preto, SP</p>
+				</div>
+			</div>
+		</div>	
+	</footer>
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+	<script src='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.js'></script>
+	<script>
+		mapboxgl.accessToken = 'pk.eyJ1IjoibmVkb3JhbiIsImEiOiJja3Z1Mzl5ZDQwMzM2Mm9xbTVhb3gzcGtsIn0.m1U6A1LL0hqbcbm_vudhNg';
+		var map = new mapboxgl.Map({
+			container: 'map',
+			style: 'mapbox://styles/mapbox/streets-v11',
+			center: [-47.811991, -21.202777],
+			zoom: 14,
+		});
+	</script>
+</body>
+</html>

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Cook Doces - Home</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+	<link href='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.css' rel='stylesheet' />
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body style='background-color: #FDDDE6;'>
+
+	<!-- Navbar -->
+	<nav class="navbar navbar-expand-lg bg-danger navbar-dark" id="navibar">
+		<div class="container">
+			<a href="index.html" class="navbar-brand"><img src="img/mascotinho.png" width="50" height="50"></a>
+			<a href="index.html" class="navbar-brand texto-grande">Cook Doces</a>
+
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu"> 		  		
+ 		  		<span class="navbar-toggler-icon"></span>
+ 		 	</button>
+
+			<div class="collapse navbar-collapse" id="navmenu">
+				<ul class="navbar-nav ms-auto">
+					<li class="nav-item">
+						<a href="index.html" class="nav-link">Início</a>
+					</li>				
+					<li class="nav-item">
+						<a href="cardapio.html" class="nav-link">Cardápio</a>
+					</li>				
+					<li class="nav-item">
+						<a href="local.html" class="nav-link">Sobre nós</a>
+					</li>
+					<li class="nav-item">
+						<a href="contato.html" class="nav-link">Fale conosco</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<!-- Bolos - carrossel -->
+	<section class="m-5 px-4">
+		<div id="carouselExampleCaptions" class="carousel carousel-dark slide" data-bs-ride="carousel">
+	 		<div class="carousel-indicators">
+			    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+			    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button> 
+			    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+			</div>
+			<div class="carousel-inner">
+			    <div class="carousel-item active">
+			      <a href="cardapio.html"><img src="img/bolo_chocolate.jpg" class="img-fluid d-block w-100"></a>
+			    </div>
+			    <div class="carousel-item">
+			      <a href="cardapio.html"><img src="img/bolo_limao.png" class="img-fluid d-block w-100"></a>
+			    </div>
+			    <div class="carousel-item">
+			      <a href="cardapio.html"><img src="img/bolo_cenoura.png" class="img-fluid d-block w-100"></a>
+			    </div>
+		    </div>
+		    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+		    	<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+		    	<span class="visually-hidden">Anterior</span>
+		    </button>
+		    <button class="carousel-control-next " type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+		    	<span class="carousel-control-next-icon" aria-hidden="true"></span>
+		    	<span class="visually-hidden">Próximo</span>
+		    </button>
+		</div>
+	</section>
+
+	<!-- Agende sua festa -->
+	<section class="p-5 text-dark text-center text-sm-start">
+		<div class="container">
+			<div class="d-sm-flex">
+				<div>
+					<h1>Agende sua festa!</h1>
+					<p class="lead my-4">Agende sua festa com a gente, faça o orçamento de todos os doces necessários para realizar a melhor festa da sua vida. Para realizar seu pedido ligue no telefone a seguir:</p>
+					<div class="telefone-texto container">						
+						<h2 class="telefone-texto"><img src="img/telefone.png" height="50" width="50"> (16)999998888</h2>
+					</div>
+				</div>
+				<img class="img-fluid w-40 d-none d-md-block" src="img/festa.jpg">
+			</div>
+		</div>
+	</section>
+
+	<!-- Mais docinhos -->
+	<section class="p-5 text-dark">
+		<div class="container">
+			<h1 class="text-center">Conheça outros doces</h1>
+			<p class="text-center">Além dos deliciosos bolos que possuímos, também apresentamos uma grande coleção de docinhos de festa, variando de brigadeiros a olhos de sogra. Não perca seu tempo: experimente!</p>
+			<p align="right">
+  				<a href="cardapio.html"><input type="button" class="btn btn-danger btn-md text-right" value="Conheça o cardápio" /></a>
+			</p>
+		</div>		
+	</section>
+
+	<!-- Footer -->
+	<footer class="p-5 bg-danger text-white position-relative">
+		<div class="container">
+			<div class="row g-4">
+				<div class="col-md">					
+					<h5 class="text-left">&emsp;&emsp;&emsp;&emsp;Parceiros</h5>
+					<div class="d-flex">
+						<div>
+							<ul class=>
+								<li>InterNATINacional</li>
+								<li>Santos Futebol Clube</li>
+								<li>Parceiro 3</li>
+							</ul>
+						</div>
+						<div>
+							<ul>
+								<li>Parceiro 4</li>
+								<li>Parceiro 5</li>
+								<li>Parceiro 6</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col-md text-center">
+					<div id='map' class="container" style='width: 200px; height: 150px;'></div>
+					<p>Av. Prof. João Fiúsa, 1400 - Ribeirão Preto, SP</p>
+				</div>
+			</div>
+		</div>	
+	</footer>
+
+
+	<!-- JS -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+	<script src='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.js'></script>
+	<script>
+		mapboxgl.accessToken = 'pk.eyJ1IjoibmVkb3JhbiIsImEiOiJja3Z1Mzl5ZDQwMzM2Mm9xbTVhb3gzcGtsIn0.m1U6A1LL0hqbcbm_vudhNg';
+		var map = new mapboxgl.Map({
+			container: 'map',
+			style: 'mapbox://styles/mapbox/streets-v11',
+			center: [-47.811991, -21.202777],
+			zoom: 14,
+		});
+	</script>
+
+</body>
+</html>

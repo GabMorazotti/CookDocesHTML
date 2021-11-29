@@ -1,0 +1,20 @@
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: #212529;
+}
+
+a:hover {
+  color: #dc3545;
+}
+
+.telefone-texto:hover {
+  color: #dc3545;
+}
+
+.texto-grande {
+  font-size: 20px; 
+}
